@@ -1,7 +1,5 @@
 package golang
 
-import "fmt"
-
 func islandPerimeter(grid [][]int) int {
 	perimeter := 0
 	mMax, nMax := len(grid), len(grid[0])
@@ -32,7 +30,6 @@ func islandPerimeterCheck(grid [][]int, m, n, mMax, nMax int) int {
 			perimeter++
 			continue
 		}
-		fmt.Println(i, n, grid[i][j])
 		if grid[i][j] == 0 {
 			perimeter++
 		}
