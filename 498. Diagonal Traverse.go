@@ -4,15 +4,6 @@ func findDiagonalOrder(mat [][]int) []int {
 	yLen := len(mat)
 	xLen := len(mat[0])
 	var result []int
-	if yLen == 1 {
-		return mat[0]
-	}
-	if xLen == 1 {
-		for i := 0; i < yLen; i++ {
-			result = append(result, mat[i][0])
-		}
-		return result
-	}
 	reverseFlag := false
 	startPoint := make([]int, 2)
 	startPoint[0] = 0
